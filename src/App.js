@@ -1,22 +1,13 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import axios from "./axios-posts.js"
+import CreatePosts from "./components/CreatePosts/CreatePosts"
 
 function App() {
-  postContent();
   return (
     <div>
-      "Hello World!"
+      <CreatePosts/>
     </div>
   );
 }
-
-function postContent() {
-  axios.put('/posts.json/',{
-    content: 'This is  ghgvjh dummy content'
-  }).then()
-    .catch(error=>console.log(error))
-}
-
 export default App;
