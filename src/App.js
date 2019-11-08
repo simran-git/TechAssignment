@@ -1,13 +1,13 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import CreatePosts from "./components/CreatePosts/CreatePosts"
+import Main from "./containers/Main"
 
 function App() {
   return (
-    <div>
-      <CreatePosts/>
-    </div>
+      <div>
+        <Main />
+      </div>
   );
 }
 export default App;

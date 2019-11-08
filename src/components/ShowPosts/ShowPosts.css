@@ -1,0 +1,66 @@
+.show-posts-container {
+    width: 100%;
+    margin: 0.6em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.show-posts-container .show-posts-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0.6em;
+    padding: 0.6em;
+}
+.show-posts-container .show-posts-header .button {
+    padding: 0.5em;
+    color: #fff;
+    outline: none;
+    border-radius: 0.6em;
+    letter-spacing: 0.04em;
+    background-color: #1f759d;
+    margin: 0 0.6em;
+}
+.show-posts-container .show-posts-header .button:hover{
+    background-color: #b63a00
+}
+.show-posts-container .show-posts-header .button:focus{
+    background-color: #b63a00   
+}
+.show-posts-container .show-posts-main {
+    width: 100%;
+    display: flex;
+}
+.show-posts-container .show-posts-user-info {
+    width: 30%;
+}
+.show-posts-container .show-posts-main ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+}
+.show-posts-container .show-posts-main ul li {
+    display: flex;
+    width: 100%;
+    border: 1px solid lightgrey;
+}
+.show-posts-container .show-posts-user-info {
+    width: 30%;
+    background-color: #1f759d;
+    margin : 0.6em;
+    margin-right: 0;
+    padding : 0.6em;
+    color: #fff;
+}
+.show-posts-container .show-posts-post-content {
+    width: 50%;
+    border: 1px solid lightgrey;
+    margin : 0.6em 0;
+    padding: 0.6em;
+}
+.small-text {
+    font-size: 1rem;
+}
+.block {
+    display : block;
+}

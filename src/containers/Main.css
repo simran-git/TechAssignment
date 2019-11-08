@@ -1,0 +1,21 @@
+#main-container {
+    min-height: 100vh; 
+    overflow: hidden;
+    display: block;
+    position: relative;
+ }
+
+ #main-container .container {
+    margin : 0 auto;
+    width : 90%;
+    max-width: 1240px;
+    display : flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+ }
+
+
