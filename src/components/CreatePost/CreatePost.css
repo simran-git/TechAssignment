@@ -1,0 +1,45 @@
+.create-post-container {
+    width: 100%;
+    margin: 0 0.6em 0.6em 0.6em;
+    padding: 0.6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.create-post-container input {
+    width: 60%;
+    height: 1em;
+    padding: 0.5em;
+    outline: none;
+    border: 1px solid lightgrey;
+    border-radius : 1em;
+    color: #111;
+    background-color: #fff;
+}
+.create-post-container input:focus {
+    border: 1px solid #007bb6;
+}
+.create-post-container button{
+    padding: 0.5em;
+    color: #fff;
+    outline: none;
+    border-radius: 0.6em;
+    letter-spacing: 0.04em;
+    background-color: #1f759d;
+}
+.create-post-container button:hover{
+    background-color: #b63a00
+}
+
+
+.button-big {
+  padding : 1em 2em;
+  font-size: 1.6rem;
+}
+.button:hover {
+  background-color : #6dcf43;
+}
+.button:focus {
+  border: 3px solid  #d2e879;
+  outline: none;
+}
