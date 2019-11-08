@@ -37,10 +37,12 @@
 .show-posts-container .show-posts-main ul {
     list-style: none;
     display: flex;
+    flex-direction: column;
     width: 100%;
 }
 .show-posts-container .show-posts-main ul li {
     display: flex;
+    justify-content: center;
     width: 100%;
     border: 1px solid lightgrey;
 }
@@ -53,7 +55,7 @@
     color: #fff;
 }
 .show-posts-container .show-posts-post-content {
-    width: 50%;
+    width: 60%;
     border: 1px solid lightgrey;
     margin : 0.6em 0;
     padding: 0.6em;
@@ -63,4 +65,5 @@
 }
 .block {
     display : block;
+    margin: 0.5em;
 }

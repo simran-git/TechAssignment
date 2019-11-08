@@ -8,13 +8,14 @@
     padding-bottom: 0;
     display : flex;
     flex-wrap : wrap;
-    justify-content : space-evenly ;
+    justify-content : center;
     align-items: center;
 }
 .user-form-container form input {
-    width : 40%;
+    width : 20%;
     height : 1em;
     padding : 0.5em;
+    margin: 0 0.6em;
     outline: none;
     border : 1px solid lightgrey;
     border-radius : 0.4em;
