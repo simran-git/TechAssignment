@@ -17,10 +17,12 @@ function ShowPosts(props) {
                     props.posts.map((post,index)=>{
                         const { userName, postContent, comments } = post;
                         return (
-                            <li>
+                            <li key = {index}>
                                 <div id = "show-posts-user-info" className = "show-posts-user-info">
-                                    <span className = "small-text block"> Posted by : </span> 
-                                    {userName}
+                                    <span className = "small-text block"> Posted by : </span>
+                                    <span className = "block"> {userName} </span>
+                                    <span className = "small-text block"> City :  </span>
+                                    <span className = "block"> Toronto </span>
                                 </div>
                                 <div id = "show-posts-post-content" className = "show-posts-post-content">
                                     {postContent}

@@ -1,5 +1,5 @@
 import React from "react";
- import ShowPosts from "../components/ShowPosts/ShowPosts" 
+import ShowPosts from "../components/ShowPosts/ShowPosts" 
 import Form from "../components/Form/Form"
 import CreatePost from "../components/CreatePost/CreatePost"
 import axios from "../axios-posts"
@@ -14,6 +14,8 @@ class Main extends React.Component{
             postContent: ''
         };
         this.onUserNameChange = this.onUserNameChange.bind(this);
+        this.onUserCityChange = this.onUserCityChange.bind(this);
+        this.getCityInformation = this.getCityInformation.bind(this);
         this.onPostTextChange = this.onPostTextChange.bind(this);
         this.onSubmitPost = this.onSubmitPost.bind(this);
     }
@@ -33,6 +35,15 @@ class Main extends React.Component{
         this.setState({
             userName
         });
+    }
+
+    onUserCityChange(inputEl) {
+        const city = inputEl.value;
+        this.getCityInformation(city);
+    }
+
+    getCityInformation(city) {
+       
     }
 
     onPostTextChange(inputEl) {
@@ -106,7 +117,7 @@ class Main extends React.Component{
         return (
             <div id = "main-container">
                 <div className = "container">
-                    <Form onUserNameChange = {this.onUserNameChange}/>
+                    <Form onUserNameChange = {this.onUserNameChange} onUserCityChange = {this.onUserCityChange}/>
                     <CreatePost onTextChange = {this.onPostTextChange} onSubmit={this.onSubmitPost} placeholder = "Write Post here.." submitButtonText = "Post"/>
                     <ShowPosts posts = {Object.values(this.state.posts)} onSubmitComment = {this.onSubmitComment} />
                 </div>   
