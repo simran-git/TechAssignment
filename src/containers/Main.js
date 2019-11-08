@@ -43,16 +43,7 @@ class Main extends React.Component{
     }
 
     getCityInformation(city) {
-        Geocode.fromAddress(city).then(
-            response => {
-                debugger;
-              const { lat, lng } = response.results[0].geometry.location;
-              console.log(lat, lng);
-            },
-            error => {
-              console.error(error);
-            }
-          );
+       
     }
 
     onPostTextChange(inputEl) {
